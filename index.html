@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Encriptador de texto</title>
+</head>
+
+<body>
+  <!-- agregar una imagen ilustrativa como desarrollador -->
+  <header>
+    <img src="/img/Logo3.png" alt="inicial-alura" class="imagen-logo">
+  </header>
+
+  <!-- cuerpo del proyecto -->
+  <main class="contenedor-principal">
+    <div class="principal">
+      <textarea name="texto-libre" id="texto-libre" class="textarea"
+        placeholder="Solo letras minúsculas y sin acentos"></textarea>
+      <div class="contenedor-botones">
+        <button type="button" id="boton-encriptado" value="Encriptar" class="boton-encriptar">Encriptar</button>
+        <button type="button" id="boton-desencriptado" value="Desencriptar"
+          class="boton-desencriptar">Desencriptar</button>
+      </div>
+    </div>
+
+    <div class="secundario">
+      <textarea name="texto-encriptado" id="texto-encriptado" style="display: none;"
+        class="textarea-secundario"></textarea>
+      <div id="ocultar">
+        <div class="imagen">
+          <img src="img/Muneco.png" alt="hombre-con-lupa-buscando-informacion">
+        </div>
+        <div class="contenedor-texto">
+          <h3><strong>Ningún mensaje fue encontrado</strong></h3><br>
+          <p>Ingresa el texto que desees encriptar o Desencriptar</p>
+        </div>
+      </div>
+      <div class="contenedor-boton-copiar">
+        <button type="button" class="boton-copiar" id="boton-copiar" style="display: none;">copiar</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- pie del proyecto -->
+  <footer>
+    Sitio web elaborado por Juan Vélez | 2024
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
